@@ -16,10 +16,14 @@ let package = Package(
         .target(
             name: "Toaster",
             dependencies: [],
-            path: "Sources"),
+            path: "Sources",
+            exclude: ["Classer/OSX"]
+        ),
         .testTarget(
             name: "ToasterTests",
             dependencies: ["Toaster"],
-            path: "ToasterTests"),
+            path: "ToasterTests",
+            exclude: ["Classer/OSX"]
+        ),
     ]
 )
